@@ -39,10 +39,6 @@
                 // Trigger the Common Event for idle processing
                 $gameTemp.reserveCommonEvent(40);
                 SceneManager.goto(Scene_Map);
-				AudioManager.playBgm({name: 'Unbawksed' + $gameVariables.value(41), volume: $gameVariables.value(337), pitch: 100});
-				AudioManager._bgmBuffer._loop = false;
-				//Update this variable when adding new chicken sounds
-				$gameVariables.setValue(336, 20);
             })
             .catch(() => {
                 // If loading fails for some reason, fallback to New Game
@@ -53,8 +49,7 @@
     // Logic for starting fresh if no save is found
     Scene_Boot.prototype.startNewGameInBoot = function() {
         DataManager.setupNewGame();
+		$gameTemp.reserveCommonEvent(40);
         SceneManager.goto(Scene_Map);
-		//Update this variable when adding new chicken sounds
-		$gameVariables.setValue(336, 20);
     };
 })();

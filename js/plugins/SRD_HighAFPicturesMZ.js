@@ -4,7 +4,7 @@
 		// Place Pictures IDs in here you want to appear above HUD Maker.
 		// They must be separated by commas.
 
-		41, 42, 43, 44, 45, 52, 53, 197, 198, 200, 201, 202, 203, 204, 210, 300
+		71, 72, 73, 74, 75, 76, 77, 78, 79, 80
 	];
 
 	Spriteset_Base.prototype.createPictures = function () {
