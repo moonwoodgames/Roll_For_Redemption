@@ -36,7 +36,7 @@
             // Existing Hijack (Bottom-Center)
             if (currentOrigin === targetOrigin) {
                 this.anchor.x = 0.5; // Horizontal Center
-                this.anchor.y = 1.0; // Vertical Bottom
+                this.anchor.y = 0.9; // Vertical Bottom
             } 
             // NEW Hijack (Top-Center)
             else if (currentOrigin === 2) {

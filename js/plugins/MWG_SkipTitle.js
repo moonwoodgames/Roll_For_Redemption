@@ -37,7 +37,7 @@
                     Scene_Base.prototype.onLoadSuccess.call(this);
                 };
                 // Trigger the Common Event for idle processing
-                $gameTemp.reserveCommonEvent(40);
+                $gameTemp.reserveCommonEvent(21);
                 SceneManager.goto(Scene_Map);
             })
             .catch(() => {
@@ -49,7 +49,7 @@
     // Logic for starting fresh if no save is found
     Scene_Boot.prototype.startNewGameInBoot = function() {
         DataManager.setupNewGame();
-		$gameTemp.reserveCommonEvent(40);
         SceneManager.goto(Scene_Map);
+		$gameTemp.reserveCommonEvent(21);
     };
 })();
