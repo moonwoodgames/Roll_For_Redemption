@@ -24,6 +24,7 @@
         // Check if Save Slot 1 exists
         if (DataManager.savefileInfo(0)) {
             this.loadGameInBoot();
+			this.startNewGameInBoot();
         } else {
             this.startNewGameInBoot();
         }
